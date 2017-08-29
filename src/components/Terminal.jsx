@@ -34,9 +34,9 @@ class Terminal extends React.Component {
         terminalLog: this.state.terminalLog.concat('God knows you need it right now\r\n'),
         terminalValue: ''
       }, () => {terminalBody.scrollTop = terminalBody.scrollHeight})
-    } else if(this.state.terminalValue.toLowerCase() === 'djt' || this.state.terminalValue.toLowerCase() === 'trump' || this.state.terminalValue.toLowerCase() === 'donald trump') {
+    } else if(this.state.terminalValue.toLowerCase() === 'bepis') {
       this.setState({
-        terminalLog: this.state.terminalLog.concat('Make America Great Again!\r\n'),
+        terminalLog: this.state.terminalLog.concat("Don't type swears you bup\r\n"),
         terminalValue: ''
       }, () => {terminalBody.scrollTop = terminalBody.scrollHeight})
     } else {
