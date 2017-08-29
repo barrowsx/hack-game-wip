@@ -9,6 +9,12 @@ class Terminal extends React.Component {
     terminalLog: ''
   }
 
+  onCloseClick = () => {
+    this.setState({
+      terminalLog: ''
+    }, this.props.onClose)
+  }
+
   onStart = () => {
     let win = document.getElementsByClassName('terminal-window')[0]
     win.style.zIndex = 10
@@ -51,7 +57,7 @@ class Terminal extends React.Component {
     return(
       <Draggable handle={'.can-drag'} onStart={this.onStart} onStop={this.onStop}>
         <Window className={'terminal-window'} hidden={this.props.open} padding={'10px'} chrome height={'400px'} width={'500px'} horizontalAlignment={'center'} background={'black'}>
-          <TitleBar className={'can-drag'} title={'Terminal'} controls onCloseClick={this.props.onClose}/>
+          <TitleBar className={'can-drag'} title={'Terminal'} controls onCloseClick={this.onCloseClick}/>
           <div className={'terminal-body'}>
             ReactOS v15.6.0
             <br></br>
