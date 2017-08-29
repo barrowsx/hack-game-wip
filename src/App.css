@@ -1,0 +1,58 @@
+body {
+  background-color: #EEEEEE;
+}
+
+input:focus {
+  outline: none;
+}
+
+.dock {
+  background-color: black;
+  filter: blur(3px);
+}
+
+.shop-window {
+  position: absolute;
+}
+
+.chat-window {
+  position: absolute;
+}
+
+.terminal-window {
+  position: absolute;
+}
+
+.chat-body {
+  overflow-y: auto;
+}
+
+.terminal-body {
+  display: flex;
+  white-space: pre-line;
+  display: inherit;
+  overflow-y: auto;
+  color: rgb(0,255,0);
+  padding: initial;
+  font-family: "Courier New", Courier, monospace;
+  max-height: 340px;
+  width: 480px;
+  max-width: 480px;
+}
+
+.terminal-text-field {
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  color: rgb(0,255,0);
+  font-family: "Courier New", Courier, monospace;
+}
+
+.terminal-input {
+  background-color: #000;
+  border: 1px solid #000;
+  color: #00ff00;
+  padding: 7px;
+  font-family: "Courier New", Courier, monospace;
+  width: 440px;
+}
